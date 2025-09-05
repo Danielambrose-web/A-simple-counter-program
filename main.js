@@ -1,3 +1,20 @@
+let count = 0
+newCount = document.getElementById("count-el")
+displayCount = document.getElementById('previous')
+function increase() {
+    count += 1
+    newCount.innerText = count
+}
+function save() {
+    val = count
+    seperator = " - "
+    display = val + seperator
+    displayCount.textContent += display
+    count = 0
+    newCount.innerText = count
+}
+
+
 //document.getElementById("count-el").innerText=5
 
 //let count = 5
@@ -38,18 +55,5 @@ console.log(increase)*/
 /*let username = "daniel ambrose"
 let message = "you have  new notifications"
  console.log(username+' '+message  )*/
-let count = 0
-function increase() {
-    count += 1
-    document.getElementById("count-el").innerText = count
-}
-function save() {
-    val = count
-    seperator=" - "
-    display = val + seperator
-    document.getElementById('previous').textContent += display
-        count =0
-    document.getElementById("count-el").innerText = count
-}
 
 
