@@ -29,11 +29,7 @@ countdown()
 countdown()
 
 console.log(increase)*/
-let count = 0
-function increase() {
-    count += 1
-    document.getElementById("count-el").innerText = count
-}
+
 
 /*function save(){
     console.log(count)
@@ -42,7 +38,11 @@ function increase() {
 /*let username = "daniel ambrose"
 let message = "you have  new notifications"
  console.log(username+' '+message  )*/
-
+let count = 0
+function increase() {
+    count += 1
+    document.getElementById("count-el").innerText = count
+}
 function save() {
     val = count
     seperator=" - "
