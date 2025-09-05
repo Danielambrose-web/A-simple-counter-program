@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>more like a counter program</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div>
-    <h1>people entered</h1>
-    <h2 id="count-el">0</h2>
-    <button id="increament-btn" onclick="increase()">INCREAMENT</button>
-    <button id="save-btn" onclick="save()">save</button>
-    <p id="previous">previous entries:</p> 
-</div>
+        <h1>people entered</h1>
+        <h2 id="count-el">0</h2>
+        <div class="actions">
+            <button id="increament-btn" onclick="increase()">INCREAMENT</button>
+            <button id="save-btn" onclick="save()">save</button>
+        </div>
+        <p id="previous">previous entries:</p>
+    </div>
+
+    <div>
+        <img src="sector.png" alt="Product Image" />
+        <div class="card-body">
+            <h3>Wireless Headphones</h3>
+            <p>Noise-cancelling over-ear headphones with 30 hours battery life.</p>
+            <div class="actions">
+                <button id="btnPrice">$129</button>
+                <button id="btnBuy" onclick="errorDisplay()">Buy Now</button>
+            </div>
+        </div>
+        <p id="error"></p>
+    </div>
 
     <script src="main.js"></script>
 </body>
+
 </html>
