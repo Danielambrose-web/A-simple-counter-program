@@ -1,6 +1,8 @@
 let count = 0
 newCount = document.getElementById("count-el")
 displayCount = document.getElementById('previous')
+errorView= document.getElementById('error')
+
 function increase() {
     count += 1
     newCount.innerText = count
@@ -13,6 +15,18 @@ function save() {
     count = 0
     newCount.innerText = count
 }
+
+function errorDisplay(){
+
+    errorView.textContent="pls it is currently not available" 
+}
+
+console.log(errorView)
+
+
+
+
+
 
 
 //document.getElementById("count-el").innerText=5
