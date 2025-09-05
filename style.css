@@ -1,50 +1,99 @@
-body {
-    background-color: aqua;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+ :root {
+     --bg: aqua;
+     --card: rgba(77, 71, 71, 0.269);
+     --radius: 16px;
+ }
 
-div {
-    height: 550px;
-    min-width: 300px;
-    background-color: rgba(77, 71, 71, 0.269);
-    border-radius: 20px;
-}
+ body {
+     background: var(--bg);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     gap: 5rem;
+ }
 
-h1 {
-    font: 30px;
-    color: blueviolet;
-    text-align: center;
-}
+ div {
+     background: var(--card);
+     border-radius: var(--radius);
+     min-width: 400px;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+ }
 
-h2 {
-    font: 25px;
-    color: blue;
-    text-align: center;
-}
+ button {
+     border: none;
+     padding: 10px 14px;
+     border-radius: var(--radius);
+     font-size: 14px;
+     font-weight: 600;
+     cursor: pointer;
+ }
 
-button {
-    font-size: 25px;
-    align-items: center;
-    border-radius: 20px;
-    justify-content: center;
-    margin: 60px;
-}
+ h1 {
+     font: 30px;
+     color: blueviolet;
+     text-align: center;
+ }
 
-#increament-btn {
-    background-color: rgb(117, 102, 12);
-    color: yellow;
-}
+ h2 {
+     font: 25px;
+     color: blue;
+     text-align: center;
+ }
+ #increament-btn {
+     background-color: rgb(117, 102, 12);
+     color: yellow;
+ }
 
-#save-btn {
-    background-color:green;
-    color: rgba(126, 252, 0, 0.627);
-}
-#previous {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
+ #save-btn {
+     background-color: green;
+     color: rgba(126, 252, 0, 0.627);
+ }
+
+ #previous {
+     font-size: 20px;
+     color: rgb(0, 0, 0);
+     text-align: center;
+ }
+
+ .card {
+     padding: 16px;
+     display: flex;
+     flex-direction: column;
+ }
+ .card h3 {
+     margin: 0 0 8px;
+     font-size: 18px;
+ }
+ .card p {
+     margin: 0;
+     color:blue;
+     font-size: 14px;
+ }
+ .actions {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 16px;
+     margin: 10px;
+ }
+ #btnPrice{
+     background: #e5e7eb;
+     color: #111;
+ }
+#btnBuy{
+     background: linear-gradient(135deg, #3a86ff, #8b5cf6);
+     color: #fff;
+ }
+  div img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+ }
+ #error{
+    color:#8b5cf6;
+    font-size: 30px;padding: 20px;
+ }
