@@ -1,0 +1,50 @@
+body {
+    background-color: aqua;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    height: 550px;
+    min-width: 300px;
+    background-color: rgba(77, 71, 71, 0.269);
+    border-radius: 20px;
+}
+
+h1 {
+    font: 30px;
+    color: blueviolet;
+    text-align: center;
+}
+
+h2 {
+    font: 25px;
+    color: blue;
+    text-align: center;
+}
+
+button {
+    font-size: 25px;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 60px;
+}
+
+#increament-btn {
+    background-color: rgb(117, 102, 12);
+    color: yellow;
+}
+
+#save-btn {
+    background-color:green;
+    color: rgba(126, 252, 0, 0.627);
+}
+#previous {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
